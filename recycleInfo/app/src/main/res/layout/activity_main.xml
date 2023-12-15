@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/mainlogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="105dp"
+            android:src="@drawable/applogo" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainlogo"
+            android:layout_alignEnd="@+id/mainlogo"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="RecycleInfo"
+            android:textSize="25dp"/>
+
+        <ImageButton
+            android:id="@+id/cctvButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="473dp"
+            android:src="@drawable/binoculars" />
+
+        <TextView
+            android:id="@+id/cctvText"
+            android:layout_width="85dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/cctvButton"
+            android:layout_alignEnd="@+id/cctvButton"
+            android:layout_alignRight="@+id/cctvButton"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="탐지 화면" />
+
+        <ImageButton
+            android:id="@+id/infoButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="242dp"
+            android:layout_marginRight="242dp"
+            android:layout_marginTop="473dp"
+            android:src="@drawable/btn_info" />
+
+        <TextView
+            android:id="@+id/infoText"
+            android:layout_width="85dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/infoButton"
+            android:layout_alignEnd="@+id/infoButton"
+            android:layout_alignRight="@+id/infoButton"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="분리수거 정보" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
